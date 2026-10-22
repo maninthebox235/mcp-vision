@@ -8,14 +8,14 @@ authors = [{ name = "Groundlight AI" }]
 license = { text = "MIT License" }
 dependencies = [
     "mcp[cli]>=1.6.0",
-    "pillow>=11.2.1",
+    "pillow>=13.0.0",
     "scipy>=1.15.2",
-    "torch>=2.7.0",
-    "transformers>=4.51.3",
+    "torch>=2.14.1",
+    "transformers>=5.10.1",
 ]
 
 [project.optional-dependencies]
-dev = ["ruff>=0.7.3", "pytest>=8.0.0"]
+dev = ["ruff>=0.7.3", "pytest>=9.0.3"]
 
 [project.scripts]
 mcp-vision = "mcp_vision:main"
@@ -25,4 +25,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.uv]
-dev-dependencies = ["ruff>=0.7.3", "pytest>=8.0.0"]
+dev-dependencies = ["ruff>=0.7.3", "pytest>=9.0.3"]
